@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-<!-- 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> -->
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
   	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-  	<link rel="stylesheet" href="layui/css/layui.css">
+  	<!-- <link rel="stylesheet" href="layui/css/layui.css"> -->
 	<style>
 		*{padding: 0; margin: 0;}
 		.btn1{
@@ -24,7 +24,7 @@
 			background: white;
 		}
 		 @media (min-width:768px){
-			.navbar-brand{
+			.btn3{
 				display: none;
 			}
 		 }
@@ -47,8 +47,8 @@
 				<img class="container" src="img/line.png" alt="">
 			</header>
 			<!-- 导航 -->
-			<nav class="navbar">
-			    <div class="navbar-header">
+			<nav>
+			    <div class="navbar-header btn3">
 			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			        <span class="btn2 sr-only">Toggle navigation</span>
 			        <span class="btn2 icon-bar"></span>
@@ -57,21 +57,23 @@
 			      </button>
 			      <a class="navbar-brand" href="">这是bootstrap框架</a>  
 			    </div>
-				<ul class="nav-justified collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
-					<li><a href="">Home</a></li>
-					<li><a href="">Products</a></li>
-					<li><a href="">Certificate</a></li>
-					<li><a href="">Service&Support</a></li>
-					<li><a href="">News</a></li>
-					<li><a href="">About us</a></li>
-					<li><a href="">Contact Us</a></li>
-					<li>
-						<img class="pull-right ss" src="img/ss.png" alt="">
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav-justified " >
+						<li><a href="">Home</a></li>
+						<li><a href="">Products</a></li>
+						<li><a href="">Certificate</a></li>
+						<li><a href="">Service&Support</a></li>
+						<li><a href="">News</a></li>
+						<li><a href="">About us</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li>
+							<img class="pull-right ss" src="img/ss.png" alt="">
 
-						<input class="pull-right ss-input" type="text">
-						
-					</li>
-				</ul>
+							<input class="pull-right ss-input" type="text">
+							
+						</li>
+					</ul>
+				</div>
 			</nav>
 			<!-- 轮播 -->
 			<div class="carcousel">
@@ -158,7 +160,7 @@
 		</div>
 	</div>
 
-	<script src="layui/layui.js" charset="utf-8"></script>
+	<!-- <script src="layui/layui.js" charset="utf-8"></script> -->
 	<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script> 
     <script src="js/swiper.min.js"></script>
