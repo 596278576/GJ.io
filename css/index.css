@@ -1,6 +1,6 @@
 *{padding: 0; margin: 0;}
 .header{
-	background: url(../img/bg.png) no-repeat center center;
+	background: url(../img/bg.png);
 	/*background-size: cover contain;*/
 	/*margin: 0 auto;*/
 	/*background-size: contain; */
@@ -41,7 +41,7 @@ nav a:hover{
 	color: #80b767;
 }*/
 .carcousel .content{
-	margin: 120px auto; 
+	margin: 20% auto; 
 	width: 80%;
 }
 .carcousel .p1{
@@ -61,7 +61,12 @@ nav a:hover{
 	color: white;
 	padding: 0px 10px;
 }
-.ss{
-
-
+@media (max-width:768px){
+	.carcousel-left{
+	display: none;
+	}
+	.carcousel img{
+		width: 100%;
+		float: none;
+	}
 }
